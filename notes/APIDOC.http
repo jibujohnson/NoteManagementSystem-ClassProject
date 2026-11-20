@@ -1,0 +1,59 @@
+
+### USER REGISTRATION API
+POST http://127.0.0.1:8000/register/
+Content-Type: application/json
+
+{
+    "username":"adith",
+    "email":"adith@gmail.com",
+    "password":"adith@123"
+}
+
+### USER LOGIN API
+POST http://127.0.0.1:8000/login/
+Content-Type: application/json
+
+{
+    "username":"alex",
+    "password":"alex@123"
+}
+
+### API FOR DISPLAYING NOTES
+GET  http://127.0.0.1:8000/notes/
+Accept: application/json
+Authorization: Token cc56502f054d40734b75bced606ba4decab381c0
+
+### API FOR CREATING NOTES
+POST http://127.0.0.1:8000/notes/
+Content-Type: application/json
+Authorization: Token cc56502f054d40734b75bced606ba4decab381c0
+
+{
+    "title":"Python",
+    "description":"Python is a simple, high-level, easy to learn language."
+}
+
+### JWT LOGIN
+POST http://127.0.0.1:8000/jwt_login/
+Content-Type: application/json
+
+{
+    "username":"alex",
+    "password":"alex@123"
+}
+
+### API FOR POSTING TASKS
+POST http://127.0.0.1:8000/task/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzk1MTUwOTgzLCJpYXQiOjE3OTUxNTA2ODMsImp0aSI6IjZiZTA5NGRiMmZmNjRiNTY5OTkyYWJmMjYyYjMyMTU4IiwidXNlcl9pZCI6IjIifQ.G9UxNm_fEEbqq3Ta9k8PyY2uLS5bVFfn18gQG9Gya5Q
+
+{
+    "title":"prime number",
+    "description":"Python program to find the prime numbers",
+    "due_date":"2026-11-25"
+}
+
+### LISTING TASK CREATED BY A SPECIFIC USER
+GET http://127.0.0.1:8000/task/
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzk1MTUwOTgzLCJpYXQiOjE3OTUxNTA2ODMsImp0aSI6IjZiZTA5NGRiMmZmNjRiNTY5OTkyYWJmMjYyYjMyMTU4IiwidXNlcl9pZCI6IjIifQ.G9UxNm_fEEbqq3Ta9k8PyY2uLS5bVFfn18gQG9Gya5Q

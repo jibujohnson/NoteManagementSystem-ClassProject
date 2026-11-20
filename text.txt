@@ -1,0 +1,6 @@
+
+### USERS WITH PASSWORD AND TOKEN NUMBER:
+
+basil - basil@123 - "token": "312f6ee1d8be3f5c13ebe0119c82afa3681a2714"
+angel - angel@123 - "token": "9b9d88864cf22acb52e1437bd3a47d3c0a4d793a"
+alex - alex@123 - "token": "cc56502f054d40734b75bced606ba4decab381c0"
